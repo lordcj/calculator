@@ -10,3 +10,5 @@ WORKDIR /devops/calculator
 
 RUN mvn clean install package
 RUN java -cp target/calculator-1.0-SNAPSHOT.jar com/calculator/Calculator
+
+ENTRYPOINT ["java", "-cp", "target/calculator-1.0-SNAPSHOT.jar", "com/calculator/Calculator"]
