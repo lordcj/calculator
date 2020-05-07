@@ -1,4 +1,4 @@
 FROM openjdk:8
-RUN java -cp target/calculator-1.0-SNAPSHOT.jar com/calculator/Calculator
+ADD target/calculator-1.0-SNAPSHOT.jar calculator-1.0.SNAPSHOT.jar
 
-ENTRYPOINT ["java", "-cp", "target/calculator-1.0-SNAPSHOT.jar", "com/calculator/Calculator"]
+ENTRYPOINT ["java", "-jar", "target/calculator-1.0-SNAPSHOT.jar"]
