@@ -1,7 +1,7 @@
 package com.calculator;
 
 public class Calculator {
-    public static void main(String[] args){
+    public static void main(String[] args){       
         System.out.println("1 + 2 = " + add(1,2));
         System.out.println("1 - 2 = " + subtract(1,2));
         System.out.println("1 * 2 = " + multiply(1,2));
